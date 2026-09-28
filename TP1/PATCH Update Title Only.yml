@@ -1,0 +1,22 @@
+info:
+  name: PATCH Update Title Only
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: "{{base_url}}/ posts/1"
+  body:
+    type: json
+    data: |-
+      {
+      "title": "Titre modifié seulement"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

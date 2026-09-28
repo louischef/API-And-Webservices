@@ -1,0 +1,17 @@
+{
+  "name": "JSONPlaceholder Env",
+  "variables": [
+    {
+      "name": "base_url",
+      "value": "https://jsonplaceholder.typicode.com/",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    }
+  ],
+  "info": {
+    "type": "bruno-environment",
+    "exportedAt": "2026-09-28T10:41:45.844Z",
+    "exportedUsing": "Bruno/v4.2.0"
+  }
+}

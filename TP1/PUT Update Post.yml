@@ -1,0 +1,25 @@
+info:
+  name: " PUT Update Post"
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{base_url}}/posts/1"
+  body:
+    type: json
+    data: |-
+      {
+      "id": 1,
+      "title": "Post mis à jour",
+      "body": "Ce post a été mis à jour.",
+      "userId": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
